@@ -99,7 +99,7 @@ else, including local folder backup, works without one.
 
 If you want that feature, support the project and I will send you a key.
 
-**Suggested: $20.** One key, all five apps, paid once - there is no subscription
+**Suggested: $25.** One key, all five apps, paid once - there is no subscription
 and no second purchase. Any amount is welcome, and I will send a key either way.
 
 | Chain | Address |
