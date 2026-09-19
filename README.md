@@ -99,6 +99,9 @@ else, including local folder backup, works without one.
 
 If you want that feature, support the project and I will send you a key.
 
+**Suggested: $15.** One key, all five apps, paid once - there is no subscription
+and no second purchase. Any amount is welcome, and I will send a key either way.
+
 | Chain | Address |
 |---|---|
 | Solana | `862YZXoRvaoTiP1AkQEEZ5FFGgPFsUhbEoRu4r44RhSe` |
