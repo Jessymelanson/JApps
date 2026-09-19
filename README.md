@@ -1,4 +1,4 @@
-﻿# JApps
+# JApps
 
 Five Android apps that keep your data on your phone, as files you can still read
 if the apps disappear. No account, no company server, no telemetry.
@@ -88,6 +88,42 @@ launch.
 **One theme.** Light, dark or system, across eight shared palettes. Every app
 opens on Paper.
 
+---
+
+## Install them
+
+Install as many or as few as you want. They work on their own, and none of them
+needs the others to be present.
+
+Android will not install an app from outside a store until you allow it once.
+That is a normal part of installing anything this way, not a sign of a problem.
+
+1. On the phone, open [Releases](../../releases) and download the ones you want.
+   Each is a single `.apk` file.
+
+2. Tap a downloaded file. Android will say it is not allowed to install unknown
+   apps from this source.
+
+3. Tap **Settings** in that message, turn on **Allow from this source**, then press
+   back and tap **Install**. The remaining files install without asking again.
+
+4. Open the app. Anything it needs permission for is asked for at the point it is
+   needed, with the reason on screen.
+
+You can turn that permission back off afterwards. It applies to the app you
+downloaded with, usually your browser, and not to the phone as a whole.
+
+Updating later is the same steps, and installing over the top keeps your data.
+
+### JPhone needs one extra step
+
+JPhone replaces the phone and messaging apps, so Android will not let it place
+calls or send texts until you make it the default. It will offer to do that the
+first time you open it. If you decline and change your mind later, it is under
+Settings, then Apps, then Default apps.
+
+Nothing is taken over quietly. Until you say yes, JPhone sits there doing
+nothing, and setting the old apps back is the same screen.
 
 ---
 
@@ -176,4 +212,3 @@ That prints `v1 scheme (JAR signing): false`. It is not missing - with
 ## Requirements
 
 Android 8.0 or later (minSdk 26), built against SDK 36.
-
