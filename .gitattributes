@@ -1,3 +1,6 @@
-﻿*.apk binary
+*.apk binary
 *.aab binary
 * text=auto
+*.png binary
+*.jpg binary
+*.webp binary

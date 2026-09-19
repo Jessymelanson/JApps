@@ -5,6 +5,17 @@ if the apps disappear. No account, no company server, no telemetry.
 
 The signed APKs are published under Releases. The source is not published here.
 
+<p align="center">
+  <img src="images/jnotes.png" alt="JNotes showing a list of notes with tag filters" width="160">
+  <img src="images/jcalendar.png" alt="JCalendar month view showing event titles in the day cells" width="160">
+  <img src="images/jauth.png" alt="JAuth showing two factor codes counting down" width="160">
+  <img src="images/jphone.png" alt="JPhone showing the contacts list" width="160">
+  <img src="images/jphotos.png" alt="JPhotos showing a folder of photos as a grid" width="160">
+</p>
+<p align="center">
+  <sub>JNotes &nbsp; &middot; &nbsp; JCalendar &nbsp; &middot; &nbsp; JAuth &nbsp; &middot; &nbsp; JPhone &nbsp; &middot; &nbsp; JPhotos</sub>
+</p>
+
 ---
 
 ## JAuth - two-factor codes
@@ -87,6 +98,20 @@ launch.
 
 **One theme.** Light, dark or system, across eight shared palettes. Every app
 opens on Paper.
+
+<p align="center">
+  <img src="images/theme-aurora.png" alt="The aurora palette" width="150">
+  <img src="images/theme-camo.png" alt="The camo palette" width="150">
+  <img src="images/theme-gears.png" alt="The gears palette" width="150">
+  <img src="images/theme-orrery.png" alt="The orrery palette" width="150">
+  <img src="images/theme-scope.png" alt="The scope palette" width="150">
+  <img src="images/theme-sonar.png" alt="The sonar palette" width="150">
+  <img src="images/theme-synthwave.png" alt="The synthwave palette" width="150">
+  <img src="images/theme-terminal.png" alt="The terminal palette" width="150">
+</p>
+<p align="center">
+  <sub>Aurora &nbsp; &middot; &nbsp; Camo &nbsp; &middot; &nbsp; Gears &nbsp; &middot; &nbsp; Orrery &nbsp; &middot; &nbsp; Scope &nbsp; &middot; &nbsp; Sonar &nbsp; &middot; &nbsp; Synthwave &nbsp; &middot; &nbsp; Terminal</sub>
+</p>
 
 ---
 
