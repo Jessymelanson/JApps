@@ -1,0 +1,11 @@
+﻿# APKs are published as Releases, never committed. Five apps at ~16MB each
+# would otherwise add ~80MB to history on every version, and git does not
+# forget: the clone stays that big forever, even after a delete.
+*.apk
+*.aab
+
+# Signing. The key lives outside every project, in ~/JApps-Signing/, and must
+# never arrive here by any route.
+keystore.properties
+*.jks
+*.keystore
