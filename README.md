@@ -1,4 +1,6 @@
 # JApps
+2 day trial for server backup:
+05YJTM-H216BS-Y1CQF4-QJX98Q-W9Q8ES-MJHVC2-HEJKN8-HEX9AV-KJ5JCS-55ZJXN-50FS10-X5PX1J-1SQF8K-A3ETBW-18SEVF-NEHQ05-GDXCWK-BZV5MH-4HDFD4
 
 Five Android apps that keep your data on your phone, as files you can still read
 if the apps disappear. No account, no company server, no telemetry.
