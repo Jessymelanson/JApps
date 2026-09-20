@@ -23,84 +23,68 @@ The signed APKs are published under Releases. The source is not published here.
 
 ## JAuth - two-factor codes
 
-Codes generated on the phone and kept there.
+Codes are generated on the phone and stay there. Secrets are encrypted with a
+key that never leaves the device, and the phone will not use that key until it
+has seen your fingerprint or PIN.
 
-- Seeds are **encrypted with a key that cannot leave the device**, and the phone
-  will not use that key until it has seen your fingerprint or PIN.
-- **No Google Play Services.** QR scanning is ZXing and CameraX - no Firebase,
-  no ML Kit, no Play dependency of any kind.
-- **Imports from Google Authenticator, Aegis, 2FAS**, or any `otpauth://` list,
-  so trying it does not mean re-enrolling thirty accounts. Google's transfer QR
-  is read on-device and its contents listed for you to pick from.
-- **Your codes are not trapped.** Export everything to a file whenever you want,
-  or save an encrypted backup under a passphrase you choose. You can set up
-  another authenticator from that export and delete JAuth.
-- Free, and always will be.
+It imports from Google Authenticator, Aegis, 2FAS, or any `otpauth://` list, so
+trying it does not mean re-enrolling every account by hand. You can export
+everything to a file whenever you want, or save an encrypted backup under a
+passphrase you choose, and set up a different authenticator from it.
+
+No Google Play Services. Free.
 
 ## JCalendar - events as `.ics` files
 
-One event, one `.ics` file, in storage only the app can touch. Each file is a
-single `VEVENT` inside a `VCALENDAR` - the same way a CalDAV server stores one -
-so a file copied off your backup server is byte-identical to the one on the
-phone, and nothing is converted on the way out.
+Each event is a single `.ics` file, kept in storage only the app can reach. Any
+calendar application can read them, and a file copied off your backup is the
+same file that is on the phone. Month view shows event titles rather than dots.
 
 ## JNotes - Markdown notes
 
-Real `.md` files, openable in any editor on any computer years from now.
-**Obsidian-compatible**: `[[Wikilinks]]` and `#tags` use the same syntax, so a
-mirrored folder opens there and works. Live preview, tappable checklists that
-write back into the file, attachments, full-text search.
+Plain `.md` files that open in any editor, on any computer, years from now.
+Wikilinks and tags use the same syntax as Obsidian, so a mirrored folder opens
+there and works. Live preview, tappable checklists that write back into the
+file, attachments and full-text search.
 
-Notes you would rather were encrypted go in a **vault**, unlocked by password or
-fingerprint with an idle timeout you set. A vault note is encrypted on the device
-and is never written to the backup mirror in readable form.
+Notes you would rather keep private go in a vault, unlocked by password or
+fingerprint with an idle timeout you set. Vault notes are encrypted on the
+device and are never written to the backup in readable form.
 
 ## JPhone - phone, messages and contacts
 
-A replacement for Google Phone, Messages and Contacts. Three tabs.
+A replacement for the phone, messages and contacts apps, in three tabs. It
+places and answers calls with its own in-call screen, including over the lock
+screen, and handles SMS and MMS with photos and voice notes.
 
-Registers as **default phone app** (places calls through `TelecomManager`, draws
-its own in-call screen - answer, decline, mute, speaker, hold, DTMF - including
-over the lock screen) and **default SMS app** (single and multipart SMS with
-delivery status, MMS with photos and voice notes).
-
-Contacts are written out as `.vcf` and conversations as readable transcripts.
+Contacts are written out as `.vcf` files and conversations as readable
+transcripts.
 
 ## JPhotos - gallery and editor
 
-**Reads what is already on the phone.** Your pictures stay in the folders
-Android already keeps them in - Camera, Screenshots, Downloads - and JPhotos
-does not move or reorganise anything on its own. Uninstalling it leaves every
+Reads the folders Android already uses, such as Camera, Screenshots and
+Downloads, and does not move or rename anything. Uninstalling it leaves every
 photo where it was.
 
-**Nothing uploads by itself.** There is no background sync; every transfer is
-one you started, on pictures you picked. Editing offers a copy by default -
-overwriting the original is a separate, deliberate choice.
-
-Android 14's "selected photos only" grant is supported, so you can hand over a
-few pictures rather than the whole library and the app stays usable.
+Nothing uploads on its own. Every transfer is one you start, on pictures you
+picked, and editing saves a copy unless you choose to overwrite. Android 14's
+"selected photos only" grant is supported, so you can hand over a few pictures
+instead of the whole library.
 
 ---
 
 ## What the five have in common
 
-**The app owns the data, and the folder is a mirror.** What you create lives in
-the app. If you switch backup on, a 1:1 copy is kept in a folder you choose - on
-the device, or on your own FTP, SFTP or SMB server. The copy is a copy: deleting
-the app does not take your backup folder with it, and nothing needs a server to
-work.
+Your data lives in the app. Switch backup on and a matching copy is kept in a
+folder you choose, either on the device or on your own FTP, SFTP or SMB server.
+The backup is a copy, so deleting an app leaves it alone. There is no JApps
+server.
 
-There is no JApps server to point at, because there isn't one.
+Server backup is the only paid feature, and one key covers all five. Paste it
+into any one of the apps and the other four pick it up when they next start.
 
-**One key unlocks all five.** Server backup is the single paid feature. A key is
-bought once, arrives as text, and is checked entirely on the device - nothing is
-sent anywhere and no account exists. That is not a convenience: an app that
-argues it makes no network calls cannot then phone home to ask permission. Paste
-a key into any one of the five and the other four pick it up on their next
-launch.
-
-**One theme.** Light, dark or system, across eight shared palettes. Every app
-opens on Paper.
+One theme across all five: light, dark or system, in eight shared palettes.
+Every app opens on Paper.
 
 <p align="center">
   <img src="images/theme-aurora.png" alt="The aurora palette" width="150">
@@ -121,10 +105,9 @@ opens on Paper.
 ## Install them
 
 Install as many or as few as you want. They work on their own, and none of them
-needs the others to be present.
+needs the others.
 
 Android will not install an app from outside a store until you allow it once.
-That is a normal part of installing anything this way, not a sign of a problem.
 
 1. On the phone, open [Releases](../../releases) and download the ones you want.
    Each is a single `.apk` file.
@@ -132,38 +115,33 @@ That is a normal part of installing anything this way, not a sign of a problem.
 2. Tap a downloaded file. Android will say it is not allowed to install unknown
    apps from this source.
 
-3. Tap **Settings** in that message, turn on **Allow from this source**, then press
-   back and tap **Install**. The remaining files install without asking again.
+3. Tap **Settings** in that message, turn on **Allow from this source**, then
+   press back and tap **Install**. The remaining files install without asking
+   again.
 
-4. Open the app. Anything it needs permission for is asked for at the point it is
-   needed, with the reason on screen.
+4. Open the app. Permissions are requested when they are needed, with the reason
+   on screen.
 
 You can turn that permission back off afterwards. It applies to the app you
-downloaded with, usually your browser, and not to the phone as a whole.
-
-Updating later is the same steps, and installing over the top keeps your data.
+downloaded with, usually your browser, and not to the phone as a whole. Updating
+later is the same steps, and installing over the top keeps your data.
 
 ### JPhone needs one extra step
 
-JPhone replaces the phone and messaging apps, so Android will not let it place
-calls or send texts until you make it the default. It will offer to do that the
-first time you open it. If you decline and change your mind later, it is under
-Settings, then Apps, then Default apps.
-
-Nothing is taken over quietly. Until you say yes, JPhone sits there doing
-nothing, and setting the old apps back is the same screen.
+JPhone cannot place calls or send texts until you make it the default phone and
+SMS app. It offers to do that the first time you open it. If you decline and
+change your mind later, it is under Settings, then Apps, then Default apps, and
+setting the old apps back is the same screen.
 
 ---
 
 ## Getting a key
 
-The five apps are free to download and use. Server backup - mirroring your data
-to your own FTP, SFTP or SMB server - is the one feature a key unlocks. Everything
-else, including local folder backup, works without one.
+The five apps are free to download and use. Server backup, which mirrors your
+data to your own FTP, SFTP or SMB server, is the one feature a key unlocks.
+Everything else, including local folder backup, works without one.
 
-If you want that feature, support the project and I will send you a key.
-
-**Suggested: $25.** One key, all five apps, paid once - there is no subscription
+**Suggested: $25.** One key, all five apps, paid once. There is no subscription
 and no second purchase. Any amount is welcome, and I will send a key either way.
 
 | Chain | Address |
@@ -172,33 +150,29 @@ and no second purchase. Any amount is welcome, and I will send a key either way.
 | Ethereum | `0xF890c6A128920D145D47753D0b1159fA4Db2861d` |
 
 Then email **jessymelanson1265@proton.me** with the transaction hash. I check the
-chain, reply with a key, and that is the whole process. There is no checkout, no
-account and no third party in the middle.
+chain and reply with a key. There is no checkout, no account and no third party
+in the middle.
 
-Transfers on both chains are irreversible - check the address character by
+Transfers on both chains are irreversible. Check the address character by
 character, and send only native SOL or ETH, or standard tokens on those chains.
 
 ### How the key is checked
 
-The key is a block of text. You paste it into any one of the five apps and the
-other four pick it up on their next launch.
+The key is a block of text. Paste it into any one of the five apps and the other
+four pick it up on their next launch.
 
-Verification happens **entirely on the device**, against a SHA-256 hash compiled
-into the app. Nothing is transmitted, no licence server is contacted, and the app
-works the same with no network at all. That is not a convenience - an app that
-argues it makes no network calls cannot then phone home to ask permission.
+It is verified on the device, against a SHA-256 hash compiled into the app.
+Nothing is transmitted and no licence server is contacted, so the apps work the
+same with no network at all. Three things follow from that:
 
-What follows from that, stated plainly rather than discovered later:
-
-- **A key works offline, forever.** It cannot be revoked remotely, because there
-  is nothing to revoke it from.
-- **It is not tied to a device or an account**, because neither is registered
+- A key works offline and cannot be revoked remotely.
+- It is not tied to a device or an account, because neither is registered
   anywhere.
-- **Keep it somewhere safe.** I can resend one from the email you used, but
-  there is no account to recover it from.
+- Keep it somewhere safe. I can resend one from the email you used, but there is
+  no account to recover it from.
 
-Please do not share your key. The verification is offline by design, which means
-the only thing keeping this sustainable is people not passing keys around.
+Please do not share your key. Verification is offline by design, so the only
+thing keeping this sustainable is people not passing keys around.
 
 ---
 
@@ -219,10 +193,9 @@ certutil -hashfile JAuth-release.apk SHA256    # Windows
 
 ## Signing
 
-All five are signed with one certificate. That is load-bearing rather than tidy:
-each app answers activation queries only from callers whose signing certificate
-matches its own, so separate keys would silently stop one key unlocking the
-family.
+All five are signed with one certificate, which is what lets a single key
+activate the whole family: each app accepts activation only from apps whose
+signing certificate matches its own.
 
 ```
 CN=JApps, OU=JFamily, O=JApps, C=CA
@@ -233,9 +206,8 @@ CN=JApps, OU=JFamily, O=JApps, C=CA
 apksigner verify --print-certs JAuth-release.apk
 ```
 
-That prints `v1 scheme (JAR signing): false`. It is not missing - with
-`minSdk 26`, apksigner only verifies the schemes that platform range uses. Add
-`--min-sdk-version 21` and v1, v2 and v3 all verify.
+This reports `v1 scheme (JAR signing): false`, which is expected at `minSdk 26`.
+Pass `--min-sdk-version 21` and v1, v2 and v3 all verify.
 
 ## Requirements
 
