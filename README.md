@@ -176,13 +176,13 @@ thing keeping this sustainable is people not passing keys around.
 
 | File | Version | SHA-256 |
 |---|---|---|
-| `JAuth-release.apk` | 1.0.0 | `e37197c7055ed034b3cd3ac2bfb3c051b3ee4d85ec5fc014154ec87f22e282af` |
+| `JAuth-release.apk` | 1.0.1 | `970abcb05a694fe7d8aa9dea30f10ba893f9692d33adc0a4fbe55b923c35f58b` |
 | `JCalendar-release.apk` | 1.0.0 | `60dcca4c00ca326ac7241cd2ec07c97dd346c0f394c1cb34a604a9060a9b2185` |
 | `JNotes-release.apk` | 1.0.0 | `f6d4c73c1cc826801f1ba74ae57b9eaf9bb175e161f62ea58668711055478568` |
 | `JPhone-release.apk` | 1.0.1 | `1dd1c08c742c40be3f8fab5c76ab0d247467070d9cb2828132c7362dde4fac78` |
 | `JPhotos-release.apk` | 1.0.0 | `3417347a0c993f50cab6d4e3556c1b0e14e31b23da1a5c07e6bcf3addf32e575` |
 
-JPhone 1.0.1 has its own release. The other four are in JApps 1.0.0.
+JAuth 1.0.1 and JPhone 1.0.1 each have their own release. The other three are in JApps 1.0.0.
 
 ```bash
 sha256sum JAuth-release.apk                    # Linux, macOS, git bash
