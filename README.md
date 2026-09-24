@@ -180,9 +180,9 @@ thing keeping this sustainable is people not passing keys around.
 | `JCalendar-release.apk` | 1.0.1 | `3b24478e78fa6ed482d80922618c20a0782fe1d54bd9d2ca18912f49867f5950` |
 | `JNotes-release.apk` | 1.0.1 | `b1c4414e1fdf860dfa3a501018a72af4a5a351904505ee6bf79cd719a0324075` |
 | `JPhone-release.apk` | 1.0.1 | `1dd1c08c742c40be3f8fab5c76ab0d247467070d9cb2828132c7362dde4fac78` |
-| `JPhotos-release.apk` | 1.0.0 | `3417347a0c993f50cab6d4e3556c1b0e14e31b23da1a5c07e6bcf3addf32e575` |
+| `JPhotos-release.apk` | 1.0.1 | `5d445c801223ed338d0baa0031bec70192e4cad180bb5fa0dac3630d054d3b7f` |
 
-JAuth, JCalendar, JNotes and JPhone 1.0.1 each have their own release. JPhotos is in JApps 1.0.0.
+Each app's 1.0.1 has its own release. The original five are in JApps 1.0.0.
 
 ```bash
 sha256sum JAuth-release.apk                    # Linux, macOS, git bash
